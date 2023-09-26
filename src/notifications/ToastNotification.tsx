@@ -16,9 +16,11 @@ const ToastNotification = () => {
       ),
     });
 
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       closeSnackbar(key);
     }, 5000);
+
+    return() => clearTimeout(timer);
 
   }, [enqueueSnackbar, closeSnackbar]);
 
