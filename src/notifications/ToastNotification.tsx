@@ -1,5 +1,7 @@
 const ToastNotification = () => {
-  return () => {
-
-  }
+  return (
+    <></>
+  )
 }
+
+export default ToastNotification
