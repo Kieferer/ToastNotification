@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p>
+      <p className={'content-place-holder'}>
         Content of the web page
       </p>
     </>
