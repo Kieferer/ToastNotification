@@ -6,7 +6,10 @@ function App() {
 
   return (
     <>
-      <SnackbarProvider maxSnack={5}>
+      <SnackbarProvider maxSnack={5} anchorOrigin={{
+        vertical: 'top',
+        horizontal: 'right'
+      }}>
         <ToastNotification/>
       </SnackbarProvider>
       <p className={'content-place-holder'}>
