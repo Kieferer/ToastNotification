@@ -37,9 +37,15 @@
 
 .progressbar-background {
     position: absolute;
-    width: 96.7%;
+    width: 98.5%;
     height: 6px;
     background-color: #3D210C;
     left: 12px;
     bottom: -14.5px;
+}
+
+.notification-close-button {
+    position: absolute;
+    color: #9B7457;
+    right: -8px;
 }
