@@ -1,5 +1,5 @@
 import {toast, ToastContainer} from "react-toastify";
-import React, { useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import './toastNotification.css'
 
@@ -42,10 +42,6 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
     },
   };
 
-  const toastContainerSettings = {
-
-  }
-
   const showNotification = () => toast(
     <div className="flex text-white p-2 -translate-y-2.5">
       <div className="icon-wrapper">
@@ -68,7 +64,14 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
   }, []);
 
   return (
-    <ToastContainer/>
+    <ToastContainer position={"top-right"}
+      autoClose={5000}
+      closeOnClick={true}
+      pauseOnFocusLoss={true}
+      draggable={true}
+      pauseOnHover={true}
+      rtl={false}
+    />
   );
 }
 
