@@ -42,15 +42,20 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
     },
   };
 
+  const toastContainerSettings = {
+
+  }
+
   const showNotification = () => toast(
     <div className="flex text-white p-2 -translate-y-2.5">
       <div className="icon-wrapper">
         <span className="material-symbols-outlined gradient">verified</span>
       </div>
       <div className="flex space-x-1.5">
-        <p className="font-light">{message}, </p>
+        <p className="font-thin">{message}, </p>
         <p className="gradient font-semibold">{highlightedMessage}!</p>
       </div>
+      <span className="material-symbols-outlined notification-close-button">close</span>
       <span className="progressbar-background rounded"/>
     </div>, {
       style: toastStyles.notificationStyle,
@@ -63,9 +68,7 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
   }, []);
 
   return (
-    <ToastContainer
-
-    />
+    <ToastContainer/>
   );
 }
 
