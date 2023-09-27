@@ -34,3 +34,12 @@
     left: 0;
     z-index: 1;
 }
+
+.progressbar-background {
+    position: absolute;
+    width: 96.7%;
+    height: 6px;
+    background-color: #3D210C;
+    left: 12px;
+    bottom: -14.5px;
+}
