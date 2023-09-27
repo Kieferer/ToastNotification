@@ -49,3 +49,7 @@
     color: #9B7457;
     right: -8px;
 }
+
+.Toastify__close-button {
+    display: none;
+}
