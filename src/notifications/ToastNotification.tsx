@@ -14,6 +14,10 @@ const ToastNotification = () => {
           <button onClick={() => closeSnackbar(key)}>{'✖'}</button>
         </>
       ),
+      anchorOrigin: {
+        vertical: 'top',
+        horizontal: 'right'
+      }
     });
 
     const timer = setTimeout(() => {
