@@ -18,6 +18,8 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
       borderRadius: '15px',
       paddingBottom: '10px',
       fontSize: "18px",
+      userSelect: 'none',
+      letterSpacing: '1px'
     },
     gradient: {
       background: 'linear-gradient(to right, #AF7D0C 0%, #F3EBAC 80%, #AF7D0C 100%)',
