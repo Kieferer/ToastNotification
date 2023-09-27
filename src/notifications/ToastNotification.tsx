@@ -8,6 +8,7 @@ const ToastNotification = () => {
   useEffect(() => {
     const message = 'Welcome, user!';
     const key = enqueueSnackbar(message, {
+      autoHideDuration: 5000,
       variant: 'default',
       action: (key) => (
         <>
@@ -19,12 +20,6 @@ const ToastNotification = () => {
         horizontal: 'right'
       }
     });
-
-    const timer = setTimeout(() => {
-      closeSnackbar(key);
-    }, 5000);
-
-    return() => clearTimeout(timer);
 
   }, [enqueueSnackbar, closeSnackbar]);
 
