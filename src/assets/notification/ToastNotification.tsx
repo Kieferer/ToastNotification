@@ -31,7 +31,7 @@ const ToastNotification: React.FC<ToastNotificationProps> = ({ message, highligh
     progressBar: {
       content: "''",
       display: 'flex',
-      width: '80%',
+      width: '81%',
       height: '6px',
       background: 'linear-gradient(to right, #AF7D0C 0%, #F3EBAC 80%, #AF7D0C 100%)',
       position: 'absolute',
